@@ -1,0 +1,97 @@
+.bdr {
+    background-color: #ffc107;
+}
+
+.icon {
+    margin-top: 80px;
+}
+
+.icon1 {
+    margin-top: 40px
+}
+
+.info {
+    margin-top: 24px;
+}
+
+.font {
+    padding-top: 8px;
+}
+
+.ha1 {
+    margin-bottom: 40px
+}
+
+.btn-color {
+    background-color: #ffc107;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* 
+.aktif {
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+} */
+
+.item {
+    padding-bottom: 5%;
+}
+
+
+/* Efek Border dari Masuk Kemudian Keluar*/
+
+.sliding-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-underline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.sliding-underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #000;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:before {
+    width: 100%;
+    background: #000;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* .test {
+    margin-left: 100%;
+} */
