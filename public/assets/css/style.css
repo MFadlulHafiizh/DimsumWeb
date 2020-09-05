@@ -32,12 +32,11 @@
     color: black;
 }
 
-
-/* 
 .aktif {
     border-bottom: 3px solid #000;
     padding-bottom: 5px;
-} */
+    padding-left: -10px;
+}
 
 .item {
     padding-bottom: 5%;

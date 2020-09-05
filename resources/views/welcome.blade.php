@@ -23,7 +23,7 @@
                 <a class="nav-link font-weight-bolder aktif" href="#">INTRODUCTION <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-weight-bolder sliding-underline pb-2 ml-2" href="#">HOME</a>
+                <a class="nav-link font-weight-bolder sliding-underline pb-2 ml-2" href="#">PRODUCT</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link font-weight-bolder sliding-underline pb-2  ml-2" href="#">HELP</a>
