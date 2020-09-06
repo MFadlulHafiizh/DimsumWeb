@@ -68,7 +68,7 @@
         <br>
         @foreach($produk as $row)
     	<a class="text-decoration-none float-left m-auto d-block" href="#">
-            <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 22rem; ">
+            <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 15rem; ">
                 <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
                 <div class="card-body bg-light ">
                     <h5 class="card-title" style="color: black;">{{ $row->nama_produk }}</h5>
