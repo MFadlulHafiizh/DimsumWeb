@@ -1,3 +1,5 @@
+body {}
+
 .bdr {
     background-color: #ffc107;
 }
@@ -28,19 +30,28 @@
     border-radius: 20px;
 }
 
+.bodi {
+    background-color: #ffc107;
+}
+
 .nav-link {
     color: black;
 }
 
-
-/* 
 .aktif {
-    border-bottom: 3px solid #000;
-    padding-bottom: 5px;
-} */
+    padding-bottom: 9px;
+    padding-left: -10px;
+    background: #ffd609;
+    color: black;
+    border-radius: 30px;
+}
 
 .item {
     padding-bottom: 5%;
+}
+
+.text-black {
+    color: black !important;
 }
 
 
@@ -58,7 +69,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 3px;
+    height: 100%;
     width: 0;
     transition: width 0s ease, background .5s ease;
 }
@@ -69,16 +80,18 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 3px;
+    height: 100%;
     width: 0;
-    background: #000;
+    background: #ffd609;
+    border-radius: 30px;
     transition: width .5s ease;
 }
 
 .sliding-underline:hover:before {
     width: 100%;
-    background: #000;
+    background: #ffd609;
     transition: width .5s ease;
+    border-radius: 30px;
 }
 
 .sliding-underline:hover:after {
@@ -91,12 +104,39 @@
     color: black;
 }
 
-.card p{
-        margin-top: -10px;
-        margin-bottom: 1px;
-    }
+.card p {
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
 
 .card:hover {
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-        transform: scale(1.02);
-    }
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.cari {
+    background: #ffc107;
+    height: 40px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    border-right: none;
+    color: black;
+}
+
+.cari:focus {
+    background: #ffc107;
+    border: 2px solid black;
+    color: black;
+}
+
+.input-group-text {
+    border-radius: 50px;
+    background: #ffc107;
+    border-left: none;
+    border: 2px solid black;
+}
+
+.fas fa-search {
+    color: black;
+}

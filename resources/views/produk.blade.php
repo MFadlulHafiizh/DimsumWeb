@@ -12,7 +12,7 @@
 @section('about', 'sliding-underline')
 @section('contact', 'sliding-underline')
 
-<body>
+<body class="bodi">
 @section('container')
     <div class="row no-gutters">
         <div class="col-md-12">
@@ -24,13 +24,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="item/menu1.png" class="d-block w-100" alt="...">
+                        <img src="item/menu1.png" class="d-block w-100 gambar" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="item/menu2.png" class="d-block w-100" alt="...">
+                        <img src="item/menu2.png" class="d-block w-100 gambar" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="item/menu3.png" class="d-block w-100" alt="...">
+                        <img src="item/menu3.png" class="d-block w-100 gambar" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -46,10 +46,25 @@
     </div>
     <br>
     <div class="container-fluid mt-3">
-        <form class="form-inline my-2 my-lg-0 ml-2 ">
-            <input class="form-control mr-sm-2 w-25" type="search" placeholder="Cari disini..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="item/varian.png" class="" alt="">
+            </div>
+            <div class="col-md-9">
+                <form class="form-inline my-2 my-lg-0 ml-2 ">
+                    <div class=" input-group mt-3 w-100 float-right ml-auto ">
+                        <input type=" text " name="search" class=" form-control cari text-dark" placeholder=" Search " value="{{ old('search') }}" aria-label=" Recipient 's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text" id="basic-addon2">
+                                <a class="text-decoration-none text-secondary" href=""><i
+                                        class="fas fa-search"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
         <br>
         @foreach($produk as $row)
     	<a class="text-decoration-none float-left m-auto d-block" href="#">
