@@ -10,6 +10,16 @@
 	<title>Tambah Produk</title>
 </head>
 <body>
+	<?php 
+		$action = 'input';
+		$title = 'TAMBAH PRODUK';
+
+		if (!empty($produk)){
+
+			$action = 'edit';
+			$title = 'EDIT PRODUK';
+		}
+	?>
 	@if(session('error'))
 		<div class="alert alert-error">
 		  	{{session('error')}}
@@ -39,7 +49,7 @@
 				<div class="col-md-3">
 					<div class="contact-info">
 						<i class="fas fa-folder-plus fa-4x"></i>
-						<h2>Tambah Produk</h2>
+						<h2><?= $title ?></h2>
 					</div>
 				</div>
 				<div class="col-md-9">
@@ -80,7 +90,7 @@
 						<div class="form-group">
 						  <label class="control-label col-sm-5">Foto</label>
 						  <div class="col-sm-10">
-							<input type="file" name="foto">
+							<input type="file" name="foto" value="{{ old('foto', @$produk->foto) }}">
 						  </div>
 						</div>
 						<div cla

@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class adminController extends Controller
 {
     public function dataAdmin(){
-    	$data['produk'] = \DB::table('menu_item')->get();
-    	return view('adminControl', $data);
+        $data['produk'] = \App\Produk::get();
+        return view('adminControl', $data);
     }
 
     public function create(){
@@ -27,15 +27,15 @@ class adminController extends Controller
     	$this->validate($request, $rule);
 
     	$input = $request->all();
-    	unset($input['_token']);
-    	$status = \DB::table('menu_item')->insert($input);
+
+        $status = \App\Produk::create($input);
 
         if ($request->hasFile('foto')) {
             $file =  $request->file('foto');
             $extension = $file->getClientOriginalName();
             $filename = time() . '_' . $extension;
             $file->move(\base_path() ."/public/produkItem", $filename);
-            $status->file =  $filename;
+            $status->foto =  $filename;
             $status->save();
         }
 
@@ -63,10 +63,18 @@ class adminController extends Controller
     	$this->validate($request, $rule);
 
     	$input = $request->all();
-        unset($input['_token']);
-        unset($input['_method']);
+        
+        $produk = \App\Produk::find($id);
+        $status = $produk->update($input);
 
-        $status = \DB::table('menu_item')->where('id', $id)->update($input);
+        if ($request->hasFile('foto')) {
+            $file =  $request->file('foto');
+            $extension = $file->getClientOriginalName();
+            $filename = time() . '_' . $extension;
+            $file->move(\base_path() ."/public/produkItem", $filename);
+            $produk->foto =  $filename;
+            $produk->update();
+        }
 
         if ($status) {
             return redirect('/admin')->with('success', 'Data berhasil diubah');

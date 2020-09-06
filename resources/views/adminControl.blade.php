@@ -44,7 +44,7 @@
 	  	@foreach($produk as $row)
 	    <tr>
 	      <th scope="row" class="ratatengah">{{ $loop->iteration }}</th>
-	      <td class="ratatengah"><img src="{{asset('/produkItem'.$row->foto)}}" alt="" width="100" height="100"></td>
+	      <td class="ratatengah"><img src="{{asset('/produkItem/'.$row->foto)}}" alt="" width="100"></td>
 	      <td class="ratatengah">{{ $row->nama_produk }}</td>
 	      <td class="ratatengah">Rp.{{ $row->harga }}</td>
 	      <td class="ratatengah">{{ $row->jumlah_porsi }}/pcs</td>
