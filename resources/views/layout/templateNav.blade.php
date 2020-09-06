@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <a class="navbar-brand" href="{{url('/')}}">
-            <img src="item/ico_nav_flat.png">
+            <img src="/item/ico_nav_flat.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                 <a class="nav-link font-weight-bolder @yield('about') pb-2  ml-2" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-weight-bolder @yield('contact') pb-2  ml-2" href="#">CONTACT</a>
+                <a class="nav-link font-weight-bolder @yield('contact') pb-2  ml-2" href=" https://api.whatsapp.com/send?phone=6289655031225">CONTACT</a>
             </li>
 
         </ul>

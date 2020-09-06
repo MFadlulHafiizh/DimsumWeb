@@ -3,7 +3,7 @@
 @section('title', 'Produk')
 
 @section('style')
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 @endsection
 
 @section('introduction', 'sliding-underline')
@@ -24,13 +24,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="item/menu1.png" class="d-block w-100 gambar" alt="...">
+                        <img src="/item/menu1.png" class="d-block w-100 gambar" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="item/menu2.png" class="d-block w-100 gambar" alt="...">
+                        <img src="/item/menu2.png" class="d-block w-100 gambar" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="item/menu3.png" class="d-block w-100 gambar" alt="...">
+                        <img src="/item/menu3.png" class="d-block w-100 gambar" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -48,10 +48,10 @@
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-md-3">
-                <img src="item/varian.png" class="" alt="">
+                <img src="/item/varian.png" class="" alt="">
             </div>
             <div class="col-md-9">
-                <form class="form-inline my-2 my-lg-0 ml-2 ">
+                <form action="{{ url('/produk/search')}}" method="GET" class="form-inline my-2 my-lg-0 ml-2 ">
                     <div class=" input-group mt-3 w-100 float-right ml-auto ">
                         <input type=" text " name="search" class=" form-control cari text-dark" placeholder=" Search " value="{{ old('search') }}" aria-label=" Recipient 's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
@@ -66,7 +66,7 @@
         </div>
         
         <br>
-        @foreach($produk as $row)
+        @foreach($konten as $row)
     	<a class="text-decoration-none float-left m-auto d-block" href="#">
             <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 22rem; ">
                 <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
@@ -84,6 +84,7 @@
             </div>
         </a>
         @endforeach
+        {{ $konten->appends(Request::all())->links() }}
     </div>
 
 @endsection
