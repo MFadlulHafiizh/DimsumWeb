@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<script src="{{URL::asset('/assets/bootstrap/js/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{URL::asset('/assets/bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{URL::asset('/assets/bootstrap/js/bootstrap.js')}}"></script>
-    <link rel="stylesheet" href="{{ URL::asset('/assets/fontawesome/css/all.min.css')}}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/bootstrap/css/bootstrap.min.css')}}">
-    <style type="text/css">
-    	.ratatengah{
-    		text-align: center;
-    	}
-    </style>
-	<title>Welcome Admin</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
 	@if(session('success'))
 	<div class="alert alert-success">
 		{{ session('success') }}
@@ -74,5 +61,4 @@
 	    @endforeach
 	  </tbody>
 	</table>
-</body>
-</html>
+@endsection

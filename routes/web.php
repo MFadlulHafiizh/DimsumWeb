@@ -21,12 +21,14 @@ Route::get('/produk', 'ProdukController@calldata');
 Route::get('/produk/search', 'ProdukController@search');
 Route::get('/produk/{id}/detail', 'ProdukController@getDetail');
 
-Route::get('/login', 'loginController@getLogin')->name('login');
+Route::get('/login', 'loginController@getLogin');
 Route::post('/login', 'loginController@postLogin');
 
-Route::get('/admin', 'adminController@dataAdmin');
+
+Route::get('/admin', 'adminController@index')->name('admin');
 Route::get('/admin/create', 'adminController@create');
 Route::post('/admin', 'adminController@store');
 Route::get('/admin/{id}/edit', 'adminController@edit');
 Route::delete('/admin/{id}', 'adminController@destroy');
 Route::patch('/admin/{id}', 'adminController@update');
+Auth::routes();

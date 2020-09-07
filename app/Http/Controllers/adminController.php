@@ -6,7 +6,21 @@ use Illuminate\Http\Request;
 
 class adminController extends Controller
 {
-    public function dataAdmin()
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
     {
         $data['produk'] = \App\Produk::get();
         return view('adminControl', $data);
