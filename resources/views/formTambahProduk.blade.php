@@ -92,9 +92,24 @@
 						<div class="form-group">
 						  <label class="control-label col-sm-5">Foto</label>
 						  <div class="col-sm-10">
-							<input type="file" name="foto" value="{{ old('foto', @$produk->foto) }}">
+
+							<input type="file" name="foto" id="chooseFile" class="form-control-file add " >
+							<?php if ($action == "edit") { ?>
+								<img id="preview" class="img-edit"  src="{{asset('produkItem/'.$produk->foto)}}" alt="" width="358" height="358">
+								<input type="hidden" name="foto" id="chooseFile" class="form-control-file " value="{{old('foto', $produk->foto)}}">
+							<?php } ?>
+							<div class="box ">
+								<img id="preview" src="{{asset('item/no-image.jpg')}}" alt="" width="358" height="358">
+							</div>
+	
+							{{-- <input type="file" name="foto" value="{{ old('foto', @$produk->foto) }}"> --}}
+
 						  </div>
 						</div>
+
+					
+						
+
 						<div cla
 						<div class="form-group">        
 						  <div class="col-sm-offset-2 col-sm-10">
@@ -106,5 +121,10 @@
 			</div>
 		</div>
 	</form>
+
+
+	<script src="{{URL::asset('/assets/js/formProduk.js')}}"></script>
+
+
 </body>
 </html>

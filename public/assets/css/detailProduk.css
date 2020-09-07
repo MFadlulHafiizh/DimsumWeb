@@ -1,12 +1,18 @@
-.box{
-	background-color: #F9F9F8;
-	border-radius: 12px;
-	box-shadow: 4px 5px 4px rgb(234,234,234);
-	padding: 16px;
+body {
+    background-color: #ffc107;
 }
-.harga{
-	font-size: 20px;
-	color: #F88000;
-	font: bold;
-	font-weight: 500;
+
+.box {
+    background-color: #F9F9F8;
+    border-radius: 12px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.129);
+    padding: 16px;
+    margin-bottom: 5%;
+}
+
+.harga {
+    font-size: 20px;
+    color: #F88000;
+    font: bold;
+    font-weight: 500;
 }

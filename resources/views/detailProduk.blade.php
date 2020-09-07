@@ -24,7 +24,7 @@
             <span  class="ml-3">{{ @$produk->jumlah_porsi }}</span>
         </div> -->
 
-        <div class="container box mt-5">
+        <div class="container box mt-3">
         	<div class="row align-items-center">
         		<div class="col-md-6">
         			<img src="{{ asset('/ProdukItem/'.$produk->foto)}}" class="container" alt="{{ $produk->nama_produk }}">
