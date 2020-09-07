@@ -23,4 +23,9 @@ class ProdukController extends Controller
 
         return view('produk', compact('konten'));
     }
+
+    public function getDetail(Request $request, $id){
+        $data['produk'] = \DB::table('menu_item')->find($id);
+        return view('detailProduk', $data);
+    }
 }

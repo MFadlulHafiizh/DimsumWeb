@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2020 at 11:31 AM
+-- Generation Time: Sep 07, 2020 at 12:10 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -45,9 +45,8 @@ CREATE TABLE `menu_item` (
 --
 
 INSERT INTO `menu_item` (`id`, `foto`, `nama_produk`, `harga`, `jumlah_porsi`, `deskripsi`, `harga_reseller`, `updated_at`, `created_at`) VALUES
-(1, '1599373100_33101047_466401160455986_4187235196795355136_n.jpg', 'siomay udang', 13000, 4, 'test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test', 2000, '2020-09-06', '0000-00-00'),
+(1, '1599456783_WhatsApp Image 2020-09-03 at 22.17.25.jpeg', 'siomay udang', 13000, 4, 'test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test', 2000, '2020-09-07', '0000-00-00'),
 (2, NULL, 'siomay spicy ayama', 13000, 4, 'testoi testea test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test', 2500, '0000-00-00', '0000-00-00'),
-(4, '', 'siomay ayam', 13000, 4, '', 2300, '0000-00-00', '0000-00-00'),
 (27, '1599373664_azhar.jpg', 'Dimsum', 13000, 4, 'asdasdasdasdasd', 2500, '2020-09-06', '2020-09-06');
 
 --

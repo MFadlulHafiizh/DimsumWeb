@@ -13,11 +13,13 @@
 	<?php 
 		$action = 'input';
 		$title = 'TAMBAH PRODUK';
+		$btn = 'TAMBAH';
 
 		if (!empty($produk)){
 
 			$action = 'edit';
 			$title = 'EDIT PRODUK';
+			$btn = 'EDIT';
 		}
 	?>
 	@if(session('error'))
@@ -96,7 +98,7 @@
 						<div cla
 						<div class="form-group">        
 						  <div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-success">Tambah</button>
+							<button type="submit" class="btn btn-success"><?=$btn?></button>
 						  </div>
 						</div>
 					</div>

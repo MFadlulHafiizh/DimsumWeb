@@ -3,7 +3,7 @@
 @section('title', 'Produk')
 
 @section('style')
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.css')}}">
 @endsection
 
 @section('introduction', 'sliding-underline')
@@ -67,19 +67,14 @@
         
         <br>
         @foreach($konten as $row)
-    	<a class="text-decoration-none float-left m-auto d-block" href="#">
-            <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 22rem; ">
+    	<a class="text-decoration-none float-left m-auto d-block" href="{{ url('/produk/' . $row->id . '/detail') }}">
+            <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 15rem; ">
                 <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
                 <div class="card-body bg-light ">
                     <h5 class="card-title" style="color: black;">{{ $row->nama_produk }}</h5>
                     <p class="font-weight-bold text-danger mb-3">Rp.{{ $row->harga }}</p>
-                    <p class="text text-secondary">jumlah/porsi {{ $row->jumlah_porsi }}</p>
-                    <i class=" fas fa-star text-warning "></i>
-                    <i class=" fas fa-star text-warning "></i>
-                    <i class=" fas fa-star text-warning "></i>
-                    <i class=" fas fa-star text-warning "></i>
-                    <i class=" fas fa-star-half-alt text-warning "></i>
-                    <span class="text-secondary" style="font-size: smaller;"></span>
+                    <button class="btn btn-success">Detail</button>
+                    
                 </div>
             </div>
         </a>
