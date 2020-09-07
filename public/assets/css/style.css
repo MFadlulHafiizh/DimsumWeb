@@ -82,14 +82,14 @@ body {}
     bottom: 0;
     height: 100%;
     width: 0;
-    background: #ffd609;
+    background: #ffd60997;
     border-radius: 30px;
     transition: width .5s ease;
 }
 
 .sliding-underline:hover:before {
     width: 100%;
-    background: #ffd609;
+    background: #ffd60997;
     transition: width .5s ease;
     border-radius: 30px;
 }

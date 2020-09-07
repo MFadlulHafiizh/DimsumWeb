@@ -25,7 +25,7 @@
 		{{ session('error') }}
 	</div>
 	@endif
-	<a href="{{ url('/admin/create') }}" class="btn btn-success">Tambah Data Barang</a>
+	<a href="{{ url('/admin/create') }}" class="btn btn-success w-100">Tambah Data Barang</a>
 	<table class="table">
 	  <thead class="thead-dark">
 	    <tr class="ratatengah">

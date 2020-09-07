@@ -18,6 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/produk', 'ProdukController@calldata');
+Route::get('/produk/search', 'ProdukController@search');
+Route::get('/produk/{id}/detail', 'ProdukController@getDetail');
+
+Route::get('/login', 'loginController@getLogin')->name('login');
+Route::post('/login', 'loginController@postLogin');
+
 Route::get('/admin', 'adminController@dataAdmin');
 Route::get('/admin/create', 'adminController@create');
 Route::post('/admin', 'adminController@store');
