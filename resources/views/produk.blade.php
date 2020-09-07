@@ -50,7 +50,7 @@
             <div class="col-md-3">
                 <img src="/item/varian.png" class="" alt="">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <form action="{{ url('/produk/search')}}" method="GET" class="form-inline my-2 my-lg-0 ml-2 ">
                     <div class=" input-group mt-3 w-100 float-right ml-auto ">
                         <input type=" text " name="search" class=" form-control cari text-dark" placeholder=" Search " value="{{ old('search') }}" aria-label=" Recipient 's username" aria-describedby="basic-addon2">
@@ -62,6 +62,9 @@
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="col-md-1">
+                <a href="{{url('/produk')}}" class="btn btn-dark mt-3 ml-2"><i class="fas fa-sync-alt"></i></a>
             </div>
         </div>
         
