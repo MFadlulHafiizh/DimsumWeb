@@ -113,18 +113,16 @@
 }
 
 .cari {
-    background: #ffc107;
+    background: #ffffff;
     height: 40px;
     width: 50px;
     border-radius: 50px;
-    border: 2px solid black;
     border-right: none;
     color: black;
 }
 
 .cari:focus {
     background: #ffc107;
-    border: 2px solid black;
     color: black;
 }
 
@@ -132,7 +130,6 @@
     border-radius: 50px;
     background: #ffc107;
     border-left: none;
-    border: 2px solid black;
 }
 
 .fas fa-search {
