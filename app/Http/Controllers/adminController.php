@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use File;
 
 class adminController extends Controller
 {
@@ -103,8 +104,13 @@ class adminController extends Controller
 
     public function destroy(Request $request, $id)
     {
+        $produk = \App\Produk::find($id);
 
-        $status = \DB::table('menu_item')->where('id', $id)->delete();
+        File::delete('produkItem/' . $produk->foto);
+
+        $status = $produk->delete();
+
+        // $status = \DB::table('menu_item')->where('id', $id)->delete();
 
         if ($status) {
             return redirect('/admin')->with('success', 'Data berhasil dihapus');
