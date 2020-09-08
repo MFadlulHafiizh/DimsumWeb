@@ -30,15 +30,15 @@
             <li class="nav-item">
                 <a class="nav-link font-weight-bolder @yield('produk') pb-2 ml-2" href="{{url('/produk')}}">PRODUK</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link font-weight-bolder @yield('help') pb-2  ml-2" href="#">HELP</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link font-weight-bolder @yield('about') pb-2  ml-2" href="#">ABOUT</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link font-weight-bolder @yield('contact') pb-2  ml-2" href=" https://api.whatsapp.com/send?phone=6289655031225">CONTACT</a>
-            </li>
+            </li> --}}
 
         </ul>
     </div>
