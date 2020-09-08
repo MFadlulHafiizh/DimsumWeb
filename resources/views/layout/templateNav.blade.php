@@ -34,7 +34,7 @@
                 <a class="nav-link font-weight-bolder @yield('help') pb-2  ml-2" href="#">HELP</a>
             </li> --}}
             <li class="nav-item">
-                <a class="nav-link font-weight-bolder @yield('about') pb-2  ml-2" href="#">ABOUT</a>
+                <a class="nav-link font-weight-bolder @yield('about') pb-2  ml-2" href="{{url('/about')}}">ABOUT</a>
             </li>
             {{-- <li class="nav-item">
                 <a class="nav-link font-weight-bolder @yield('contact') pb-2  ml-2" href=" https://api.whatsapp.com/send?phone=6289655031225">CONTACT</a>
