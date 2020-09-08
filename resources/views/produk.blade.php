@@ -48,7 +48,7 @@
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-md-3">
-                <img src="/item/varian.png" class="" alt="">
+                <img src="/item/varian.png" class="img-fluid" alt="">
             </div>
             <div class="col-md-8">
                 <form action="{{ url('/produk/search')}}" method="GET" class="form-inline my-2 my-lg-0 ml-2 ">
@@ -67,24 +67,26 @@
                 <a href="{{url('/produk')}}" class="btn btn-dark mt-3 ml-2"><i class="fas fa-sync-alt"></i></a>
             </div>
         </div>
-        
+        </div>
         <br>
+        <div class="row no-gutters">
         @foreach($konten as $row)
-    	<a class="text-decoration-none float-left m-auto d-block" href="{{ url('/produk/' . $row->id . '/detail') }}">
-            <div class="card mr-2 ml-2 mb-3" style=" width: 16rem; height: 15rem; ">
-                <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
-                <div class="card-body bg-light ">
-                    <h5 class="card-title" style="color: black;">{{ $row->nama_produk }}</h5>
-                    <p class="font-weight-bold text-danger mb-3">Rp.{{ $row->harga }}</p>
-                    <button class="btn btn-success">Detail</button>
-                    
-                </div>
+            <div class="col-md-2 p-2">
+            	<a class="text-decoration-none m-auto d-block" href="{{ url('/produk/' . $row->id . '/detail') }}">
+                    <div class="card mb-3" style="width: 100%;">
+                        <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
+                        <div class="card-body bg-light ">
+                            <h5 class="card-title" style="color: black;">{{ $row->nama_produk }}</h5>
+                            <p class="font-weight-bold text-danger mb-3">Rp.{{ $row->harga }}</p>
+                            <button class="btn btn-success">Detail</button>
+                            
+                        </div>
+                    </div>
+                </a>
             </div>
-        </a>
         @endforeach
+        </div>
         {{ $konten->appends(Request::all())->links() }}
-    </div>
-
 @endsection
 @section('script')
 @endsection
