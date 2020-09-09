@@ -140,3 +140,10 @@
     text-align: justify;
     text-shadow: 1px 1px 1px black;
 }
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 2%;
+}

@@ -38,12 +38,27 @@
         		</div>
         	</div>
         	<div class="row pl-3">
-	        	<div class="col-auto mb-3 offset-md-10">
-	        		<a href="#" class="btn btn-success">INFO PEMESANAN</a>
-	        	</div>
-        	</div>
-        </div>
+				<div class="col-auto offset-10">
+				<p class="ml-auto mr-4">
+					<button class="btn btn-success " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					  INFO PEMESANAN
+					</button>
+				  </p>
+				  <div class="collapse" style="margin-left: -950px;" id="collapseExample">
+					<div class="card card-body border-success mr-4">
+						<div class="h5">Lokasi Kedai dan Kantor Produksi</div>
+						Jl. Ciumbuleuit bawah  no.05 rt.06/10 kota bandung
 
+						<div class="h5 mt-3">Contact person</div>
+						Alin 
+						081910383236 (call) <br>
+						081224820002 (wa only) <br>
+						<a href="https://api.whatsapp.com/send?phone=6289655031225" class="btn btn-success mt-2" style="width: 16%">CONTACT ME</a>
+					</div>
+				  </div>
+        	   </div>
+            </div>
+        </div>
 @endsection
 @section('script')
 @endsection

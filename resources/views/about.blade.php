@@ -13,7 +13,7 @@
 
 <body class="bodi">
 	@section('container')
-	<div class="row justify-content-md-center">
+	<div class="row no-gutters justify-content-md-center">
 		<div class="col-md-6 icon">
 	        <img src="item/icon_utama.png" class="img-fluid" alt="Dimsum Sadulur">
 	    </div>
@@ -69,7 +69,17 @@ Produk adalah segala sesuatu yang di tawarkan oleh produsen kepada konsumen agar
 Harga<br>
 Harga merupakan ekspresi nilai yang mengenai kegunaan atau kualitas produk tersebut. Kami membuka patokn harga baik untuk agen, seller maupun perorangan.
     </span>
-    </div>
+</div>
+
+<br><br><br>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row copyright bg-success">
+                <p class="font-weight-bold pb-2"><i class=" far fa-copyright "></i> 2020 DIMSUM-SADULUR | All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
 
     @endsection
     @section('script')
