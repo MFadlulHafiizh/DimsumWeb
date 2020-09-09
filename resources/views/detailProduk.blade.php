@@ -36,28 +36,36 @@
             		<p class="ml-3 mr-2">Deskripsi :</p>
             		<p class="ml-3 mr-2 mb-3">{{ @$produk->deskripsi }} {{ @$produk->deskripsi }}</p>
         		</div>
-        	</div>
-        	<div class="row pl-3">
-				<div class="col-auto offset-10">
-				<p class="ml-auto mr-4">
-					<button class="btn btn-success " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        	
+        	<div class="row  w-100">
+				<div class="col-sm-12">
+				<p class="float-right" >
+					<button class="btn btn-success ml-auto " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 					  INFO PEMESANAN
 					</button>
 				  </p>
-				  <div class="collapse" style="margin-left: -950px;" id="collapseExample">
-					<div class="card card-body border-success mr-4">
-						<div class="h5">Lokasi Kedai dan Kantor Produksi</div>
-						Jl. Ciumbuleuit bawah  no.05 rt.06/10 kota bandung
-
-						<div class="h5 mt-3">Contact person</div>
-						Alin 
-						081910383236 (call) <br>
-						081224820002 (wa only) <br>
-						<a href="https://api.whatsapp.com/send?phone=6289655031225" class="btn btn-success mt-2" style="width: 16%">CONTACT ME</a>
-					</div>
+				</div>
+			</div>
+				  <div class="row w-100">
+					  <div class="col-md-12">
+						<div class="collapse"  id="collapseExample">
+							<div class="card card-body border-success	 mb-2 ml-4" >
+								<div class="h4">LOKASI KEDAI DAN KANTOR PRODUKSI</div>
+								Jl. Ciumbuleuit bawah  no.05 rt.06/10 kota bandung
+		
+								<div class="h5 mt-3">CONTACT PERSON</div>
+								Alin 
+								081910383236 (call) <br>
+								081224820002 (wa only) <br>
+								<a href="https://api.whatsapp.com/send?phone=6289655031225" class="btn btn-success mt-4 ">CONTACT ME</a>
+							</div>
+						  </div>
+					  </div>
 				  </div>
 
-        	</div>
+
+        		
+		</div>
         </div>
 
 @endsection
