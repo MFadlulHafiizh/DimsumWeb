@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/produk', 'ProdukController@calldata');
 Route::get('/produk/search', 'ProdukController@search');
 Route::get('/produk/{id}/detail', 'ProdukController@getDetail');
+Route::get('/about', function(){
+	return view('about');
+});
 
 Route::get('/admin', 'adminController@index')->name('admin');
 Route::get('/admin/create', 'adminController@create');

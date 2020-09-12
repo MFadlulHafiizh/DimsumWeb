@@ -16,14 +16,6 @@
 	@section('container')
 
 	@csrf
-<!-- 		<div class="col-md-8">
-            <h1 class="ml-3">{{ @$produk->nama_produk }}</h1>
-            <span class="ml-3 mb-3 tanggal">{{ @$produk->harga }}</span>
-            <img src="{{ asset('/ProdukItem/'.$produk->foto)}}" class="container mt-2" alt="...">
-            <p class="ml-3 mt-2 isi-berita">{{ @$produk->deskripsi }}</p><br>
-            <span  class="ml-3">{{ @$produk->jumlah_porsi }}</span>
-        </div> -->
-
         <div class="container box mt-3">
         	<div class="row align-items-center">
         		<div class="col-md-6">
@@ -62,12 +54,10 @@
 						  </div>
 					  </div>
 				  </div>
-
-
-        		
+        	   </div>
+            </div>      		
 		</div>
         </div>
-
 @endsection
 @section('script')
 @endsection

@@ -70,14 +70,13 @@
             </div>
         </div>
         </div>
-        <br>
-        <div class="row no-gutters">
+        <div class="row p-5" style="border: 1px solid black">
         @foreach($konten as $row)
-            <div class="col-md-2 p-2">
-            	<a class="text-decoration-none m-auto d-block" href="{{ url('/produk/' . $row->id . '/detail') }}">
-                    <div class="card mb-3" style="width: 100%;">
-                        <img style=" width: 100%;" src="{{asset('/produkItem/'.$row->foto)}}" class=" card-img-top" alt=" ...">
-                        <div class="card-body bg-light ">
+            
+            	<a class="text-decoration-none" href="{{ url('/produk/' . $row->id . '/detail') }}">
+                    <div class="card mr-2 ml-2 mb-4" style=" width: 16rem; height: 29rem;">
+                        <img src="{{asset('/produkItem/'.$row->foto)}}" alt=" ..." style="height: 18rem;">
+                        <div class="card-body bg-light h-75">
                             <h5 class="card-title" style="color: black;">{{ $row->nama_produk }}</h5>
                             <p class="font-weight-bold text-danger mb-3">Rp.{{ $row->harga }}</p>
                             <button class="btn btn-success">Detail</button>
@@ -85,10 +84,9 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            
         @endforeach
         </div>
-        {{ $konten->appends(Request::all())->links() }}
 @endsection
 @section('script')
 @endsection
