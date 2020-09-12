@@ -13,25 +13,18 @@
 
 <body class="bodi">
 	@section('container')
-	<div class="row no-gutters justify-content-md-center">
-		<div class="col-md-6 icon">
-	        <img src="item/icon_utama.png" class="img-fluid" alt="Dimsum Sadulur">
-	    </div>
-    </div>
-    <br>
-    <div class="container">
-    	<div class="row justify-content-md-center">
-    		<div class="col-md-6">
-    			<i class="fas fa-map-marked-alt"></i> 
-    			<span class=""> Jl. Ciumbuleuit bawah  no.05 rt.06/10 kota bandung</span>
-    			<br>
-    			<i class="fas fa-phone-alt"></i>
-    			<span>081910383236 (call)</span>
-    			<br>
-    			<i class="fab fa-whatsapp-square"></i>
-    			<span>081224820002</span>
-    		</div>
-    	</div>
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <img src="item/about-bg.jpg" class="img-fluid" alt="Dimsum Sadulur">
+                </div>
+            </div>
+    <div class="container rback">
+        <div class="row">
+                <div class="col-md-12">
+                    <h1 class="font-weight-bold judul text-center text-white">ABOUT</h1>
+                    <hr class="line bg-white">
+                </div>
+            </div>
     	<br>
     	<br>
     <span class="text">
@@ -70,9 +63,6 @@ Harga<br>
 Harga merupakan ekspresi nilai yang mengenai kegunaan atau kualitas produk tersebut. Kami membuka patokn harga baik untuk agen, seller maupun perorangan.
     </span>
 </div>
-
-<br><br><br>
-
     <footer>
         <div class="container-fluid">
             <div class="row copyright bg-success">

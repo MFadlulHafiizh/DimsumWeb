@@ -8,10 +8,7 @@ class ProdukController extends Controller
 {
     public function calldata()
     {
-        // $data['produk'] = \DB::table('menu_item')->get();
-        // return view('produk', $data);
-
-        $konten = \App\Produk::paginate(9);
+        $konten = \App\Produk::get();
         return view('produk', compact('konten'));;
     }
 
@@ -19,7 +16,7 @@ class ProdukController extends Controller
     {
         $search = $request->search;
 
-        $konten = \App\Produk::where('nama_produk', 'like', "%" . $search . "%")->paginate(9);
+        $konten = \App\Produk::where('nama_produk', 'like', "%" . $search . "%")->get();
 
         return view('produk', compact('konten'));
     }
