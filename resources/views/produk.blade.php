@@ -70,7 +70,7 @@
             </div>
         </div>
         </div>
-        <div class="row p-5" style="border: 1px solid black">
+        <div class="row p-5" >
         @foreach($konten as $row)
             
             	<a class="text-decoration-none" href="{{ url('/produk/' . $row->id . '/detail') }}">
